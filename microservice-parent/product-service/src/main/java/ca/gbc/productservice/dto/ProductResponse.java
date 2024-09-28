@@ -8,3 +8,6 @@ public record ProductResponse(
         String description,
         BigDecimal price
 ) {}
+
+
+

@@ -10,7 +10,25 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/microservice-parent" />
-            <option value="$PROJECT_DIR$/microservice-parent/product-service" />
+            <option value="$PROJECT_DIR$/microservice-parent/product-service, order-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservice-parent/order-service" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/microservice-parent/order-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/order-service" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/order-service" />
           </set>
         </option>
       </GradleProjectSettings>

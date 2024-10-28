@@ -14,7 +14,7 @@ import org.testcontainers.containers.MongoDBContainer;
 
 
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ProductServiceApplicationTests {
 
     @ServiceConnection

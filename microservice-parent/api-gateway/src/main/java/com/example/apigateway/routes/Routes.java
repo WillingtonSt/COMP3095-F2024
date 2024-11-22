@@ -131,22 +131,6 @@ public class Routes {
     }
 
 
-    @Bean
-    public RouterFunction<ServerResponse> orderServiceSwaggerRoute() {
 
-        return GatewayRouterFunctions.route("order_service")
-                .route(RequestPredicates.path("/api/order/swagger-ui/index.html"), request -> {
-
-                    try{
-                        ServerResponse response = HandlerFunctions.http(orderServiceUrl).handle(request);
-                        log.info("Response status: {}", response.statusCode());
-                        return response;
-                    } catch (Exception e) {
-                        return ServerResponse.status(500).body("Error occurred when routing to order-service");
-                    }
-
-                }).build();
-
-    }
 
 }

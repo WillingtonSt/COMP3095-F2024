@@ -4,7 +4,7 @@ db = db.getSiblingDB('product-service');
 
 db.createUser(
     {
-        user: 'admin',
+        user: 'app_user',
         pwd: 'password',
         roles: [ {role: 'readWrite', db: 'product-service'}]
     }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/microservice-parent/init/postgres/inventory/init.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/init/postgres/order/init.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/inventory-service/src/main/resources/db/migration/V1__init.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/inventory-service/src/main/resources/db/migration/V2__add_inventory.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/local-docker-file/postgres/init/inventory/init.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/local-docker-file/postgres/init/order/init.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/microservice-parent/order-service/src/main/resources/db/migration/V1__init.sql" dialect="GenericSQL" />
+  </component>
+</project>

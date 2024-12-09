@@ -21,6 +21,9 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://packages.confluent.io/maven/")
+    }
 }
 
 dependencyManagement {
@@ -39,6 +42,18 @@ dependencies {
     implementation("org.flywaydb:flyway-database-postgresql")
     implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
     implementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner")
+
+    implementation("org.springframework.kafka:spring-kafka:3.3.0")
+    testImplementation("org.springframework.kafka:spring-kafka-test:3.3.0")
+    testImplementation("org.testcontainers:kafka:1.20.4")
+
+    implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j:3.1.2")
+
+    implementation("org.apache.avro:avro:1.12.0")
+    implementation("io.confluent:kafka-schema-registry-client:7.7.1")
+    implementation("io.confluent:kafka-avro-serializer:7.7.1")
+
+
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")

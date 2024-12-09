@@ -22,10 +22,10 @@ public class SecurityConfig {
 
         return httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
-             //   .authorizeHttpRequests(authorize -> authorize
-             //          .anyRequest().permitAll())                   // All requests temporarily permitted
                 .authorizeHttpRequests(authorize -> authorize
-                        .anyRequest().authenticated())               // All requests require authentication
+                       .anyRequest().permitAll())                   // All requests temporarily permitted
+             //   .authorizeHttpRequests(authorize -> authorize
+             //           .anyRequest().authenticated())               // All requests require authentication
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
                 .build();
 

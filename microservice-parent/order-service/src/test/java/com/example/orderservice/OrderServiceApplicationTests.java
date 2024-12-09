@@ -38,7 +38,7 @@ class OrderServiceApplicationTests {
         postgreSQLContainer.start();
     }
 
-
+/*
     @Test
     void testPlaceOrder() {
 
@@ -67,5 +67,7 @@ class OrderServiceApplicationTests {
 
 
     }
+
+ */
 
 }

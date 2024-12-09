@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/microservice-parent/inventory-service" />
             <option value="$PROJECT_DIR$/microservice-parent/order-service" />
             <option value="$PROJECT_DIR$/microservice-parent/product-service" />
+            <option value="$PROJECT_DIR$/microservice-parent/shared-schema" />
           </set>
         </option>
       </GradleProjectSettings>
